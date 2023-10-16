@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,200&family=Roboto:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.search {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.search img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.content {
+  z-index: 2;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 0 13px;
+}
+.content h1 {
+  font-size: 2.65rem;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.1);
+  font-weight: 700;
+}
+
+.content h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+.search-bar {
+  height: 55px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  padding-left: 55px;
+
+  border-radius: 5px;
+  background: #fff;
+}
+
+.search-bar i {
+  position: absolute;
+  color: black;
+  background-color: white;
+  z-index: 2;
+  top: 50%;
+  left: 20px;
+  font-size: 1.4rem;
+  transform: translateY(-50%);
+  color: #8d8d8d;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+}
+
+.gallery .images {
+  columns: 5 250px;
+  margin-top: 40px;
+  gap: 15px;
+  max-width: 97%;
+  break-inside: avoid;
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+}
+
+.images .card {
+  list-style: none;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+
+.load-more {
+  padding: 12px 27px;
+  background-color: #8a6cff;
+  margin: 50px 0px;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.load-more.disable {
+  background-color: #8d8d8d;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.card {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.details .title {
+  margin-top: 5px;
+}
+
+.card button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.lighthouse {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.65);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+.lighthouse.show {
+  display: block;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  max-width: 850px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.wrapper .image-preview img {
+  max-height: 65vh;
+  max-width: 90vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 15px 10px;
+}
+.header span {
+  font-size: 1.5rem;
+  margin-left: 5px;
+  font-weight: 800;
+}
+
+.photographer {
+  padding: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.image-preview {
+  display: flex;
+  justify-content: center;
+}
+.image-preview img {
+  width: 100%;
+  height: 100%;
+}
+.buttons button {
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  background: #8a6cff;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.buttons .close {
+  color: #fff;
+  background-color: #8d8d8d;
+}
+
+.categoryHeading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 20px; /* Adjusted margin-top to provide spacing */
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  z-index: 99;
+}
+
+.category-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Change the background color as desired */
+  color: #fff; /* Change text color as desired */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.category-button:hover {
+  background-color: #0056b3; /* Change the hover background color as desired */
+}

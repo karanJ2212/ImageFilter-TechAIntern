@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ImageSearchEngine</title>
+  </head>
+  <body>
+    <div class="lighthouse">
+      <div class="wrapper">
+        <div class="header">
+          <div class="phographer">
+            <i class="fa-solid fa-camera"></i>
+            <span>karan jain</span>
+            <p class="title">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="buttons">
+            <button class="close">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+        <div class="image-preview">
+          <img class="prv-img" src="images/img-1.jpg" alt="img" />
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="search">
+      <img src="images/search-img.jpg" alt="" class="search-bg" />
+      <div class="content">
+        <h1>Images search and filter</h1>
+        <h4>Browse through thousands of images and download for free</h4>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Enter your query here..."
+          />
+        </div>
+           <div class="category-buttons">
+        
+        <div class="category-buttons">
+          <button class="category-button" data-category="Sports">Sports</button>
+          <button class="category-button" data-category="Nature">Nature</button>
+          <button class="category-button" data-category="Kids">Kids</button>
+          <button class="category-button" data-category="Cartoon">Cartoon</button>
+          <button class="category-button" data-category="Weddings">Weddings</button>
+          <button class="category-button" data-category="Food">Food</button>
+          <button class="category-button" data-category="Travel">Travel</button>
+          <button class="category-button" data-category="Animals">Animals</button>
+          <button class="category-button" data-category="Architecture">Architecture</button>
+          <button class="category-button" data-category="Technology">Technology</button>
+        </div>
+        <!-- <h3 class="categoryHeading">Seach by category</h3> -->
+      </div>
+
+   
+    </section>
+
+    <!-- <section class="search">
+      <img src="images/search-img.jpg" alt="" class="search-bg" />
+      <div class="content">
+        <h1>Images search and filter</h1>
+        <h4>Browse through thousands of images and download for free</h4>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Enter your query here..."
+          />
+        </div>
+        <h3 class="categoryHeading">Search by category</h3>
+
+        <div class="category-buttons">
+          <button class="category-button" data-category="Sports">Sports</button>
+          <button class="category-button" data-category="Nature">Nature</button>
+          <button class="category-button" data-category="Kids">Kids</button>
+          <button class="category-button" data-category="Cartoon">
+            Cartoon
+          </button>
+          <button class="category-button" data-category="Weddings">
+            Weddings
+          </button>
+          <button class="category-button" data-category="Food">Food</button>
+          <button class="category-button" data-category="Travel">Travel</button>
+          <button class="category-button" data-category="Animals">
+            Animals
+          </button>
+          <button class="category-button" data-category="Architecture">
+            Architecture
+          </button>
+          <button class="category-button" data-category="Technology">
+            Technology
+          </button>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="gallery">
+      <ul class="images"></ul>
+      <button class="load-more">load more</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
